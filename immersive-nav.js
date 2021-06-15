@@ -20,16 +20,16 @@ class ImmersiveNav extends LocalizeDynamicMixin(LitElement) {
 		`;
 	}
 
-	static get localizeConfig() {
-		return {
-			importFunc: async lang => (await import(`./lang/${lang}.js`)).default
-		};
-	}
-
 	constructor() {
 		super();
 
 		this.prop1 = 'immersive-nav';
+	}
+
+	static get localizeConfig() {
+		return {
+			importFunc: async lang => (await import(`./lang/${lang}.js`)).default
+		};
 	}
 
 	render() {
