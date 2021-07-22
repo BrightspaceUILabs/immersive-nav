@@ -4,16 +4,15 @@ import 'd2l-navigation/d2l-navigation-link-back';
 import { css, html, LitElement } from 'lit-element/lit-element';
 import { Localizer } from '../locales/localizer';
 
-
 // Extends the standard immersive nav to resize the back link on small screens
 class InsightsImmersiveNav extends Localizer(LitElement) {
 	static get properties() {
 		return {
 			orgUnitId: { type: Number, attribute: 'org-unit-id' },
 			navTitle: { type: String, attribute: 'nav-title' },
-			navBackTitle: { type: String, attribute: 'nav-back-title'},
-			navBackTitleShort: { type: String, attribute: 'nav-back-title-short'},
-			navBackLink: { type: String, attribute: 'nav-back-link'}
+			navBackTitle: { type: String, attribute: 'nav-back-title' },
+			navBackTitleShort: { type: String, attribute: 'nav-back-title-short' },
+			navBackLink: { type: String, attribute: 'nav-back-link' }
 		};
 	}
 
