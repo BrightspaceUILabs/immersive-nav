@@ -5,7 +5,7 @@
   "scripts": {
     "lint": "npm run lint:eslint && npm run lint:lit && npm run lint:style",
     "lint:eslint": "eslint . --ext .js,.html",
-    "lint:lit": "lit-analyzer immersive-nav.js --strict",
+    "lint:lit": "lit-analyzer immersive-nav.js",
     "lint:style": "stylelint \"**/*.js\"",
     "start": "es-dev-server --app-index demo/index.html --node-resolve --dedupe --open --watch",
     "test": "npm run lint && npm run test:headless",
@@ -17,6 +17,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7",
     "@brightspace-ui/stylelint-config": "^0.1",
+    "@brightspace-ui/visual-diff": "^6.0.0",
     "@open-wc/testing": "^2",
     "@open-wc/testing-karma": "^4",
     "@webcomponents/webcomponentsjs": "^2",
@@ -29,6 +30,7 @@
     "eslint-plugin-sort-class-members": "^1",
     "karma-sauce-launcher": "^4",
     "lit-analyzer": "^1",
+    "puppeteer": "^8.0.0",
     "stylelint": "^13"
   },
   "files": [
@@ -41,6 +43,7 @@
   },
   "dependencies": {
     "@brightspace-ui/core": "^1",
+    "d2l-navigation": "BrightspaceUI/navigation#semver:^4",
     "lit-element": "^2"
   }
 }
