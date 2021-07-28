@@ -1,9 +1,9 @@
-import puppeteer from 'puppeteer';
-import VisualDiff from '@brightspace-ui/visual-diff';
+const puppeteer = require('puppeteer');
+const VisualDiff = require ('@brightspace-ui/visual-diff');
 
 describe('d2l-labs-immersive-nav', () => {
 
-	const visualDiff = new VisualDiff('immersive-nav', __dirname);
+	const visualDiff = new VisualDiff('d2l-labs-immersive-nav', __dirname);
 
 	let browser, page;
 
@@ -14,13 +14,9 @@ describe('d2l-labs-immersive-nav', () => {
 		await page.bringToFront();
 	});
 
-	beforeEach(async() => {
-		await visualDiff.resetFocus(page);
-	});
-
 	after(async() => await browser.close());
 
-	it.skip('passes visual-diff comparison', async function() {
+	it('passes visual-diff comparison', async function() {
 		const rect = await visualDiff.getRect(page, '#default');
 		await visualDiff.screenshotAndCompare(page, this.test.fullTitle(), { clip: rect });
 	});
