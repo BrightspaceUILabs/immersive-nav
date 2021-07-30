@@ -11,7 +11,7 @@ class ImmersiveNav extends LitElement {
 			navBackTitle: { type: String, attribute: 'nav-back-title' },
 			navBackTitleShort: { type: String, attribute: 'nav-back-title-short' },
 			navBackLink: { type: String, attribute: 'nav-back-link' },
-			_backLinkClickHandler: { attribute: false }
+			backLinkClickHandler: { attribute: false }
 		};
 	}
 
