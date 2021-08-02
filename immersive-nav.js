@@ -51,13 +51,13 @@ class ImmersiveNav extends LitElement {
 						text="${this.navBackTitle}"
 						href="${this.navBackLink}"
 						class="d2l-link-back-default"
-						@click="${this._backLinkClickHandler}">
+						@click="${this.backLinkClickHandler}">
 					</d2l-navigation-link-back>
 					<d2l-navigation-link-back
 						text="${this.navBackTitleShort || this.navBackTitle}"
 						href="${this.navBackLink}"
 						class="d2l-link-back-responsive"
-						@click="${this._backLinkClickHandler}">
+						@click="${this.backLinkClickHandler}">
 					</d2l-navigation-link-back>
 				</div>
 				<div slot="middle" class="d2l-immersive-nav-title">
