@@ -1,7 +1,6 @@
-import 'd2l-navigation/d2l-navigation-immersive';
-import 'd2l-navigation/d2l-navigation-link-back';
-
-import { css, html, LitElement } from 'lit-element/lit-element';
+import 'd2l-navigation/d2l-navigation-immersive.js';
+import 'd2l-navigation/d2l-navigation-link-back.js';
+import { css, html, LitElement } from 'lit-element/lit-element.js';
 
 class ImmersiveNav extends LitElement {
 	static get properties() {
