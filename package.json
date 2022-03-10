@@ -42,8 +42,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@brightspace-ui/core": "^2",
-    "d2l-navigation": "BrightspaceUI/navigation#semver:^5",
+    "@brightspace-ui/core": "https://github.com/BrightspaceUI/core#vmisechko/lit-2",
+    "d2l-navigation": "https://github.com/BrightspaceUI/navigation#vmisechko/lit-2",
     "lit-element": "^3"
   }
 }
