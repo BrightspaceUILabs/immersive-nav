@@ -6,7 +6,7 @@ describe('ImmersiveNav', () => {
 
 	describe('accessibility', () => {
 		it('should pass all aXe tests', async() => {
-			const el = await fixture(html`<d2l-labs-immersive-nav></d2l-labs-immersive-nav>`);
+			const el = await fixture(html`<d2l-labs-immersive-nav nav-back-title="Back title"></d2l-labs-immersive-nav>`);
 			await expect(el).to.be.accessible();
 		});
 	});
