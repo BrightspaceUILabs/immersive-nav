@@ -1,5 +1,5 @@
-import 'd2l-navigation/d2l-navigation-immersive.js';
-import 'd2l-navigation/d2l-navigation-link-back.js';
+import '@brightspace-ui-labs/navigation/d2l-navigation-immersive.js';
+import '@brightspace-ui-labs/navigation/d2l-navigation-link-back.js';
 import { css, html, LitElement } from 'lit-element/lit-element.js';
 
 class ImmersiveNav extends LitElement {
