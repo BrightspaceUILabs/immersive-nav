@@ -25,7 +25,7 @@
     "@web/test-runner": "^0.14",
     "@web/test-runner-saucelabs": "^0.8",
     "eslint": "^8",
-    "eslint-config-brightspace": "^0.18",
+    "eslint-config-brightspace": "^0.19",
     "eslint-plugin-html": "^7",
     "eslint-plugin-import": "^2",
     "eslint-plugin-lit": "^1",
