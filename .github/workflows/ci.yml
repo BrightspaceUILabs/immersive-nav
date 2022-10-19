@@ -11,15 +11,14 @@ jobs:
         with:
           node-version-file: .nvmrc
       - name: Install dependencies
-        run: npm install
+        run: |
+          npx playwright install-deps
+          npm install
       - name: Lint (JavaScript)
         run: npm run lint:eslint
       - name: Lint (CSS)
         run: npm run lint:style
       - name: Lint (Lit)
         run: npm run lint:lit
-      - name: Unit Tests (SauceLabs)
-        run: npx web-test-runner --config web-test-runner.sauce.config.js
-        env:
-          SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_ACCESS_KEY_DESIRE2LEARN }}
-          SAUCE_USERNAME: Desire2Learn
+      - name: Unit Tests (All Browsers)
+        run: npm run test:headless:ci
