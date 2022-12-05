@@ -27,7 +27,7 @@
     "@web/test-runner": "^0.15",
     "@web/test-runner-playwright": "^0.9.0",
     "eslint": "^8",
-    "eslint-config-brightspace": "^0.19",
+    "eslint-config-brightspace": "^0.20",
     "eslint-plugin-html": "^7",
     "eslint-plugin-import": "^2",
     "eslint-plugin-lit": "^1",
