@@ -46,6 +46,6 @@
   "dependencies": {
     "@brightspace-ui-labs/navigation": "^5",
     "@brightspace-ui/core": "^2",
-    "lit-element": "^3"
+    "lit-element": "^4"
   }
 }
