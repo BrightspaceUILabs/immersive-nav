@@ -12,7 +12,7 @@ jobs:
           node-version-file: .nvmrc
       - name: Install dependencies
         run: |
-          npx playwright install-deps
+          npx playwright install --with-deps
           npm install
       - name: Lint (JavaScript)
         run: npm run lint:eslint
