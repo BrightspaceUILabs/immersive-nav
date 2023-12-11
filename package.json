@@ -1,6 +1,6 @@
 {
   "name": "@brightspace-ui-labs/immersive-nav",
-  "description": "A lit-element component for navigating between webpages.",
+  "description": "A Lit component for navigating between webpages.",
   "type": "module",
   "repository": "https://github.com/BrightspaceUILabs/immersive-nav.git",
   "scripts": {
@@ -46,6 +46,6 @@
   "dependencies": {
     "@brightspace-ui-labs/navigation": "^5",
     "@brightspace-ui/core": "^2",
-    "lit-element": "^3"
+    "lit": "^2"
   }
 }

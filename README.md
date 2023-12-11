@@ -16,7 +16,7 @@
 > - [ ] Demo page
 > - [ ] README documentation
 
-A lit-element component for navigating between webpages.
+A Lit component for navigating between webpages.
 
 ## Installation
 
